@@ -122,6 +122,16 @@ ul {
 
 .obliczanie-img-top {
   margin: auto;
+}
+
+/* Certyfikacja */
+
+.certyfikacja-card {
+  margin-top: 80px;
+}
+
+.certyfikacja-card-img-top {
+  margin: 0 auto;
   width: 50%;
 }
 
@@ -170,7 +180,8 @@ footer {
   .konsultacje-indywidualne-card h4 {
     margin-top: 20px;
   }
-  .obliczanie-img-top {
+  .obliczanie-img-top,
+  .certyfikacja-card-img-top {
     width: 100%;
   }
 }
