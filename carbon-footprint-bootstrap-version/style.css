@@ -104,6 +104,27 @@ ul {
   margin: auto;
 }
 
+/* Obliczanie */
+.obliczanie-main {
+  background-image: url("img/obliczanie_mountains3.jpg");
+  background-size: cover;
+  background-position: 100%;
+
+  color: #fff;
+}
+
+.obliczanie-main-text {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #343a40;
+}
+
+.obliczanie-img-top {
+  margin: auto;
+  width: 50%;
+}
+
 footer {
   background-color: #343a40;
   width: 100%;
@@ -148,6 +169,9 @@ footer {
   }
   .konsultacje-indywidualne-card h4 {
     margin-top: 20px;
+  }
+  .obliczanie-img-top {
+    width: 100%;
   }
 }
 
