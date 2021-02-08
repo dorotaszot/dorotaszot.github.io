@@ -55,6 +55,11 @@ ul {
   color: var(--secondary-color);
 }
 
+.btn-arrow {
+  background-color: rgba(255, 255, 255, 0.6);
+  border: none;
+}
+
 .home-more {
   box-sizing: border-box;
 }
@@ -122,17 +127,57 @@ ul {
 
 .obliczanie-img-top {
   margin: auto;
+  width: 50%;
 }
 
 /* Certyfikacja */
 
 .certyfikacja-card {
   margin-top: 80px;
+  margin-bottom: 30px;
 }
 
 .certyfikacja-card-img-top {
   margin: 0 auto;
   width: 50%;
+}
+
+/* Blog */
+.blog-card-group {
+  margin-top: 80px;
+}
+
+.blog-body {
+  height: 100%;
+}
+
+.blog-card-body {
+  height: 10px;
+}
+
+.blog-img {
+  height: 50%;
+}
+
+.blog-footer {
+  position: absolute;
+}
+
+/* Kontakt */
+.kontakt-wrapper {
+  margin-top: 80px;
+  margin-bottom: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  flex-direction: row;
+}
+
+form,
+textarea {
+  box-sizing: border-box;
+}
+
+.kontakt-footer {
+  position: absolute;
 }
 
 footer {
@@ -146,6 +191,9 @@ footer {
 }
 
 @media (max-width: 992px) {
+  .container {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -158,6 +206,47 @@ footer {
   .card-deck {
     display: block;
   }
+  .blog-card-body {
+    height: auto;
+  }
+  .blog-img {
+    height: 50%;
+    width: 70%;
+    margin: auto;
+  }
+  .blog-footer {
+    position: static;
+  }
+  .fa-hotel,
+  .fa-envelope,
+  .fa-phone {
+    font-size: 1.5rem;
+  }
+  .kontakt-wrapper {
+    border: none;
+    flex-direction: column;
+    align-items: center;
+  }
+  .kontakt-wrapper h2 {
+    font-size: 1.6rem;
+  }
+  .kontakt-wrapper .form-group input,
+  .kontakt-wrapper button {
+    display: block;
+    width: 100%;
+  }
+  .kontakt-icons {
+    margin-top: 30px;
+  }
+  .kontakt-footer {
+    position: static;
+  }
+  .card-deck.home-more.card.home-card.m-3.p-3 {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 @media (max-width: 576px) {
@@ -167,12 +256,7 @@ footer {
     padding-left: 0;
     padding-right: 0;
   }
-  .card-deck.home-more.card.home-card.m-3.p-3 {
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 0;
-    padding-right: 0;
-  }
+
   .card-body {
     margin: 0;
     padding: 0;
@@ -181,7 +265,8 @@ footer {
     margin-top: 20px;
   }
   .obliczanie-img-top,
-  .certyfikacja-card-img-top {
+  .certyfikacja-card-img-top,
+  .konsultacje-indywidualne-card-img-top {
     width: 100%;
   }
 }
@@ -198,5 +283,14 @@ footer {
   }
   .dark-bg-card {
     font-size: 1.2rem;
+  }
+  form,
+  textarea,
+  .form-group {
+    width: 290px;
+    flex-wrap: nowrap;
+  }
+  .kontakt-wrapper {
+    margin-top: 80px;
   }
 }
