@@ -62,6 +62,13 @@ ul {
 
 .home-more {
   box-sizing: border-box;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.konsultacje-card-top-home {
+  background-color: #343a40;
+  color: #fff;
 }
 
 /* .card {
